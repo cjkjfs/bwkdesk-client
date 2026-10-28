@@ -1118,9 +1118,9 @@ jobs:
             rustdesk*-${{ matrix.job.arch }}.dmg
 
   publish-signed-update-metadata:
-    needs: [build-for-windows-flutter, build-for-windows-sciter, build-for-macOS]
+    needs: [build-for-windows-flutter, build-for-macOS]
     runs-on: ubuntu-22.04
-    if: ${{ inputs.upload-artifact && inputs.publish-update-metadata && github.repository == 'rustdesk/rustdesk' }}
+    if: ${{ inputs.upload-artifact && inputs.publish-update-metadata && github.repository == 'cjkjfs/bwkdesk-client' }}
     concurrency:
       group: signed-update-${{ inputs.upload-tag }}
       cancel-in-progress: false
