@@ -30,10 +30,7 @@ const SIGNATURE_ALGORITHM: &str = "ed25519";
 const TRUSTED_UPDATE_KEYS: &[TrustedUpdateKey] = &[TrustedUpdateKey {
     key_id: "2026-ed25519-main",
     algorithm: SIGNATURE_ALGORITHM,
-    public_key: [
-        118, 252, 116, 215, 49, 217, 220, 109, 145, 119, 210, 101, 225, 198, 63, 2, 41, 127, 197,
-        127, 52, 251, 6, 204, 125, 117, 96, 204, 187, 166, 85, 59,
-    ],
+    public_key: [74,31,183,106,35,48,106,127,165,48,65,201,52,131,144,146,64,151,64,94,50,137,144,207,172,81,50,186,190,162,37,7],
 }];
 
 #[derive(Deserialize)]
